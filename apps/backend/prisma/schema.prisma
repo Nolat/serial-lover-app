@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator nestgraphql {
+  provider   = "prisma-nestjs-graphql"
+  output     = "generated"
+  emitSingle = true
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Player {
+  id            String  @id @default(cuid())
+  name          String
+  private_token String  @unique @default(cuid())
+  game_id       String
+  action_id     String
+  order         Int
+  avatar        String?
+}
+
+model Game {
+  id            String @id @default(cuid())
+  name          String
+  private_token String @unique @default(cuid())
+}
+
+model GameAction {
+  id      String @id @default(cuid())
+  name    String
+  game_id String
+}

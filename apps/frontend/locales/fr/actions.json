@@ -1,0 +1,21 @@
+{
+  "defaultActions": [
+    "serrer la main 🤝",
+    "faire la bise 💋",
+    "faire une accolade 🤗",
+    "faire un coeur avec les mains ❤️",
+    "check la personne 🤜",
+    "prendre une photo 📸",
+    "faire un pierre feuille ciseaux ✂️",
+    "vous et votre cible prenez une photo avec les mariés 📸",
+    "vous et votre cible prenez une photo avec le marié 📸",
+    "vous et votre cible prenez une photo avec la mariée 📸",
+    "si vous connaissez votre cible, dites lui bonjour comme si vous ne la connaissiez pas. Si vous ne connaissez pas votre cible, dites lui bonjour comme si c'était votre meilleur ami 🤝",
+    "trinquer 🍻"
+  ],
+  "GameCreateCard": {
+    "title": "Vous cherchez à organiser une partie ?"
+  },
+  "headline": "Trouver des idées d'actions n'est pas facile.",
+  "title": "Liste d'actions pour une partie"
+}
